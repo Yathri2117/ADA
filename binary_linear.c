@@ -8,7 +8,7 @@ high=n-1;
 while(low<high){
     mid=(low+high)/2;
     if(key==array[mid]){
-       return  mid;
+       return  1;
     }
     else if(key<array[mid])
         high=mid-1;
@@ -21,7 +21,7 @@ int lin(int array[],int key,int n){
 unsigned long int i;
 for(i=0;i<n;i++){
     if(array[i]==key)
-        return i+1;
+        return 1;
         else
             return -1;
 }
